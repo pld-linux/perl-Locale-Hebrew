@@ -6,7 +6,7 @@
 %define	pdir	Locale
 %define	pnam	Hebrew
 Summary:	Locale::Hebrew - Bidirectional Hebrew support
-Summary(pl.UTF-8):   Locale::Hebrew - obsługa języka hebrajskiego z dwukierunkowym pismem
+Summary(pl.UTF-8):	Locale::Hebrew - obsługa języka hebrajskiego z dwukierunkowym pismem
 Name:		perl-Locale-Hebrew
 Version:	1.04
 Release:	1
