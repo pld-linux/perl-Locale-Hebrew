@@ -6,7 +6,7 @@
 %define	pdir	Locale
 %define	pnam	Hebrew
 Summary:	Locale::Hebrew - Bidirectional Hebrew support
-Summary(pl):	Locale::Hebrew - obs³uga jêzyka hebrajskiego z dwukierunkowym pismem
+Summary(pl.UTF-8):   Locale::Hebrew - obsÅ‚uga jÄ™zyka hebrajskiego z dwukierunkowym pismem
 Name:		perl-Locale-Hebrew
 Version:	1.04
 Release:	1
@@ -28,12 +28,12 @@ the real charset from scratch. There might have some mistakes, though.
 
 One function, hebrewflip, is exported by default.
 
-%description -l pl
-Ten modu³ jest oparty na kodzie z Unicode Consortium. Zestaw znaków w
-tamtym kodzie by³ b³êdny, wiêc obs³uga prawdziwego zestawu znaków
-musia³a byæ napisana od zera. Mo¿e jednak zawieraæ b³êdy.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest oparty na kodzie z Unicode Consortium. Zestaw znakÃ³w w
+tamtym kodzie byÅ‚ bÅ‚Ä™dny, wiÄ™c obsÅ‚uga prawdziwego zestawu znakÃ³w
+musiaÅ‚a byÄ‡ napisana od zera. MoÅ¼e jednak zawieraÄ‡ bÅ‚Ä™dy.
 
-Domy¶lnie eksportowana jest jedna funkcja - hebrewflip.
+DomyÅ›lnie eksportowana jest jedna funkcja - hebrewflip.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
