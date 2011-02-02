@@ -16,6 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/A/AU/AUTRIJUS/Locale-Hebrew-%{version}.tar.gz
 # Source0-md5:	5b1c08e039886c0319a0c4ece6209064
 URL:		http://search.cpan.org/dist/Locale-Hebrew/
+%{?with_tests:BuildRequires:	perl-Encode}
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
