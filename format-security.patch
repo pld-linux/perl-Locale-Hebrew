@@ -1,0 +1,29 @@
+--- Locale-Hebrew-1.05/bidi.c~	2004-09-17 21:16:42.000000000 +0200
++++ Locale-Hebrew-1.05/bidi.c	2013-06-13 17:06:09.592637611 +0200
+@@ -1234,7 +1234,7 @@
+     }
+     pszTypes[ich] = 0;
+ 
+-    fprintf(f, pszTypes);
++    fprintf(f, "%s", pszTypes);
+ }
+ 
+ void ShowTypes(FILE* f, int * types, int cch) {
+@@ -1245,7 +1245,7 @@
+     }
+     pszTypes[ich] = 0;
+ 
+-    fprintf(f, pszTypes);
++    fprintf(f, "%s", pszTypes);
+ }
+ 
+ void ShowLevels(FILE* f, int * levels, int cch) {
+@@ -1256,7 +1256,7 @@
+     }
+     pszLevel[ich] = 0;
+ 
+-    fprintf(f, pszLevel);
++    fprintf(f, "%s", pszLevel);
+ }
+ 
+ void usage(char *s) {

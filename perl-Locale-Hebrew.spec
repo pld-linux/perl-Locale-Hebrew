@@ -8,13 +8,14 @@
 Summary:	Locale::Hebrew - Bidirectional Hebrew support
 Summary(pl.UTF-8):	Locale::Hebrew - obsługa języka hebrajskiego z dwukierunkowym pismem
 Name:		perl-Locale-Hebrew
-Version:	1.04
-Release:	4
+Version:	1.05
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/A/AU/AUTRIJUS/Locale-Hebrew-%{version}.tar.gz
-# Source0-md5:	5b1c08e039886c0319a0c4ece6209064
+Source0:	http://www.cpan.org/modules/by-authors/id/A/AU/AUDREYT/Locale-Hebrew-%{version}.tar.gz
+# Source0-md5:	424209b23bf423f1923f9b24b5ae2179
+Patch0:		format-security.patch
 URL:		http://search.cpan.org/dist/Locale-Hebrew/
 %{?with_tests:BuildRequires:	perl-Encode}
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -38,6 +39,7 @@ Domyślnie eksportowana jest jedna funkcja - hebrewflip.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
