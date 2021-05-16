@@ -12,10 +12,10 @@ Release:	12
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/A/AU/AUDREYT/Locale-Hebrew-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Locale/Locale-Hebrew-%{version}.tar.gz
 # Source0-md5:	424209b23bf423f1923f9b24b5ae2179
 Patch0:		format-security.patch
-URL:		http://search.cpan.org/dist/Locale-Hebrew/
+URL:		https://metacpan.org/release/Locale-Hebrew
 %{?with_tests:BuildRequires:	perl-Encode}
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
