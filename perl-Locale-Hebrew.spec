@@ -62,8 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorarch}/Locale/*.pm
+%{perl_vendorarch}/Locale/Hebrew.pm
 %dir %{perl_vendorarch}/auto/Locale/Hebrew
 %{perl_vendorarch}/auto/Locale/Hebrew/autosplit.ix
-%attr(755,root,root) %{perl_vendorarch}/auto/Locale/Hebrew/*.so
-%{_mandir}/man3/*
+%attr(755,root,root) %{perl_vendorarch}/auto/Locale/Hebrew/Hebrew.so
+%{_mandir}/man3/Locale::Hebrew.3pm*
