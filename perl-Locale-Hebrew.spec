@@ -8,7 +8,7 @@ Summary:	Locale::Hebrew - Bidirectional Hebrew support
 Summary(pl.UTF-8):	Locale::Hebrew - obsługa języka hebrajskiego z dwukierunkowym pismem
 Name:		perl-Locale-Hebrew
 Version:	1.05
-Release:	13
+Release:	14
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
