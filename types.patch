@@ -1,0 +1,11 @@
+--- Locale-Hebrew-1.05/Hebrew.xs.orig	2004-09-17 21:16:41.000000000 +0200
++++ Locale-Hebrew-1.05/Hebrew.xs	2025-08-01 00:33:20.504223871 +0200
+@@ -19,7 +19,7 @@
+ _hebrewflip(s)
+ SV * s
+ CODE:
+-    int l;
++    STRLEN l;
+     char *src, *dst;
+     SV *r;
+ 

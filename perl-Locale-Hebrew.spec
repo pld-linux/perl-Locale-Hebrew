@@ -15,6 +15,9 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Locale/Locale-Hebrew-%{version}.tar.gz
 # Source0-md5:	424209b23bf423f1923f9b24b5ae2179
 Patch0:		format-security.patch
+Patch1:		includes.patch
+Patch2:		prototypes.patch
+Patch3:		types.patch
 URL:		https://metacpan.org/release/Locale-Hebrew
 %{?with_tests:BuildRequires:	perl-Encode}
 BuildRequires:	perl-Module-Install
@@ -41,6 +44,9 @@ Domyślnie eksportowana jest jedna funkcja - hebrewflip.
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
+%patch -P3 -p1
 
 %build
 %{__perl} Makefile.PL \

@@ -1,0 +1,10 @@
+--- Locale-Hebrew-1.05/bidi.c.orig	2025-07-31 23:59:30.397624379 +0200
++++ Locale-Hebrew-1.05/bidi.c	2025-08-01 00:17:10.076983097 +0200
+@@ -7,6 +7,7 @@
+ */
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ 
+ #define ASSERT(x) if (!(x)) { fprintf(stderr, "assert failed: %s\n", #x); exit(-1);} else ;
+ #define TCHAR   unsigned char
