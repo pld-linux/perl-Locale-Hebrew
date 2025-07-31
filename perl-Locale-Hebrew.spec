@@ -17,6 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/Locale/Locale-Hebrew-%{version}.t
 Patch0:		format-security.patch
 URL:		https://metacpan.org/release/Locale-Hebrew
 %{?with_tests:BuildRequires:	perl-Encode}
+BuildRequires:	perl-Module-Install
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
